@@ -1,0 +1,40 @@
+---
+abstract: 'Append data to gathered files'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.102346, CPAN::Meta::Converter version 2.102400'
+license: apache
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Zilla-Plugin-AppendExternalData
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  Dist::Zilla::Plugin::AppendExternalData:
+    file: lib/Dist/Zilla/Plugin/AppendExternalData.pm
+    version: 0.001
+requires:
+  Moose: 0
+  Moose::Autobox: 0
+  MooseX::Types::Path::Class: 0
+  Path::Class: 0
+  namespace::autoclean: 0
+  perl: 5.006
+resources:
+  homepage: http://github.com/dagolden/dist-zilla-plugin-appendexternaldata/tree
+  repository: git://github.com/dagolden/dist-zilla-plugin-appendexternaldata.git
+version: 0.001
