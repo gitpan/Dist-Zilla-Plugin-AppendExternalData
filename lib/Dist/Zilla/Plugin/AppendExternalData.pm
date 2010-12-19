@@ -11,7 +11,7 @@ use strict;
 use warnings;
 package Dist::Zilla::Plugin::AppendExternalData;
 BEGIN {
-  $Dist::Zilla::Plugin::AppendExternalData::VERSION = '0.001';
+  $Dist::Zilla::Plugin::AppendExternalData::VERSION = '0.002';
 }
 # ABSTRACT: Append data to gathered files
 
@@ -95,7 +95,7 @@ Dist::Zilla::Plugin::AppendExternalData - Append data to gathered files
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

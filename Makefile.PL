@@ -24,13 +24,16 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'apache',
   'NAME' => 'Dist::Zilla::Plugin::AppendExternalData',
   'PREREQ_PM' => {
+    'Dist::Zilla::Role::FileFinderUser' => '0',
+    'Dist::Zilla::Role::FileMunger' => '0',
+    'Dist::Zilla::Role::FilePruner' => '0',
     'Moose' => '0',
     'Moose::Autobox' => '0',
     'MooseX::Types::Path::Class' => '0',
     'Path::Class' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }

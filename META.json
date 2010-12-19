@@ -4,7 +4,7 @@
       "David Golden <dagolden@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.102346, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200001, CPAN::Meta::Converter version 2.102400",
    "license" : [
       "apache_2_0"
    ],
@@ -32,6 +32,9 @@
       },
       "runtime" : {
          "requires" : {
+            "Dist::Zilla::Role::FileFinderUser" : 0,
+            "Dist::Zilla::Role::FileMunger" : 0,
+            "Dist::Zilla::Role::FilePruner" : 0,
             "Moose" : 0,
             "Moose::Autobox" : 0,
             "MooseX::Types::Path::Class" : 0,
@@ -51,7 +54,7 @@
    "provides" : {
       "Dist::Zilla::Plugin::AppendExternalData" : {
          "file" : "lib/Dist/Zilla/Plugin/AppendExternalData.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -63,6 +66,6 @@
          "web" : "http://github.com/dagolden/dist-zilla-plugin-appendexternaldata/tree"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
 
