@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::AppendExternalData - Append data to gathered files
 
 VERSION
-    version 0.002
+    version 0.003
 
 SYNOPSIS
        [AppendExternalData]
@@ -15,14 +15,14 @@ DESCRIPTION
 
     When using this plugin, be thoughtful about the order in which you want
     files to be modified. For example, if you are appending Pod, it makes a
-    big difference if you append before or after a plugin like C<PodWeaver>.
+    big difference if you append before or after a plugin like "PodWeaver".
     If you list this plugin first, the Pod will be appended before weaving
     and the added Pod will wind up in the middle of the generated Pod. If
     this plugin is listed last, the Pod will be appended after weaving and
-    will follow the generald Pod from C<PodWeaver>.
+    will follow the generated Pod from "PodWeaver".
 
-    If appending a C<__DATA__> section, be sure to put this plugin last
-    among plugins that modify your files.
+    If appending a "__DATA__" section, be sure to put this plugin last among
+    plugins that modify your files.
 
 ATTRIBUTES
   source_dir (REQUIRED)
@@ -41,11 +41,26 @@ CAVEAT
     This is a proof-of-concept and does not yet have any tests of its
     behavior.
 
+SUPPORT
+  Bugs / Feature Requests
+    Please report any bugs or feature requests through the issue tracker at
+    <http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Appe
+    ndExternalData>. You will be notified automatically of any progress on
+    your issue.
+
+  Source Code
+    This is open source software. The code repository is available for
+    public review and contribution under the terms of the license.
+
+    <https://github.com/dagolden/dist-zilla-plugin-appendexternaldata>
+
+      git clone https://github.com/dagolden/dist-zilla-plugin-appendexternaldata.git
+
 AUTHOR
     David Golden <dagolden@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2010 by David Golden.
+    This software is Copyright (c) 2012 by David Golden.
 
     This is free software, licensed under:
 

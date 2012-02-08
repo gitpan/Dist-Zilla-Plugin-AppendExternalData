@@ -1,19 +1,8 @@
-#
-# This file is part of Dist-Zilla-Plugin-AppendExternalData
-#
-# This software is Copyright (c) 2010 by David Golden.
-#
-# This is free software, licensed under:
-#
-#   The Apache License, Version 2.0, January 2004
-#
 use strict;
 use warnings;
 package Dist::Zilla::Plugin::AppendExternalData;
-BEGIN {
-  $Dist::Zilla::Plugin::AppendExternalData::VERSION = '0.002';
-}
 # ABSTRACT: Append data to gathered files
+our $VERSION = '0.003'; # VERSION
 
 use Moose;
 use Moose::Autobox;
@@ -95,7 +84,7 @@ Dist::Zilla::Plugin::AppendExternalData - Append data to gathered files
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -111,12 +100,12 @@ gathered for the distribution.
 When using this plugin, be thoughtful about the order in which you want
 files to be modified.  For example, if you are appending Pod, it makes
 a big difference if you append before or after a plugin like
-CE<lt>PodWeaverE<gt>.  If you list this plugin first, the Pod will be appended
+C<<< PodWeaver >>>.  If you list this plugin first, the Pod will be appended
 before weaving and the added Pod will wind up in the middle of the generated
 Pod.  If this plugin is listed last, the Pod will be appended after
-weaving and will follow the generald Pod from CE<lt>PodWeaverE<gt>.
+weaving and will follow the generated Pod from C<<< PodWeaver >>>.
 
-If appending a CE<lt>__DATA__E<gt> section, be sure to put this plugin last
+If appending a C<<< __DATA__ >>> section, be sure to put this plugin last
 among plugins that modify your files.
 
 =head1 ATTRIBUTES
@@ -142,13 +131,32 @@ pruned from the distribution. The default is 1.
 
 This is a proof-of-concept and does not yet have any tests of its behavior.
 
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders
+
+=head1 SUPPORT
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the issue tracker
+at L<http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-AppendExternalData>.
+You will be notified automatically of any progress on your issue.
+
+=head2 Source Code
+
+This is open source software.  The code repository is available for
+public review and contribution under the terms of the license.
+
+L<https://github.com/dagolden/dist-zilla-plugin-appendexternaldata>
+
+  git clone https://github.com/dagolden/dist-zilla-plugin-appendexternaldata.git
+
 =head1 AUTHOR
 
 David Golden <dagolden@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by David Golden.
+This software is Copyright (c) 2012 by David Golden.
 
 This is free software, licensed under:
 

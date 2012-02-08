@@ -7,9 +7,9 @@ build_requires:
   File::Temp: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200001, CPAN::Meta::Converter version 2.102400'
+generated_by: 'Dist::Zilla version 4.300005, CPAN::Meta::Converter version 2.112621'
 license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,7 +26,7 @@ no_index:
 provides:
   Dist::Zilla::Plugin::AppendExternalData:
     file: lib/Dist/Zilla/Plugin/AppendExternalData.pm
-    version: 0.002
+    version: 0.003
 requires:
   Dist::Zilla::Role::FileFinderUser: 0
   Dist::Zilla::Role::FileMunger: 0
@@ -37,7 +37,10 @@ requires:
   Path::Class: 0
   namespace::autoclean: 0
   perl: 5.006
+  strict: 0
+  warnings: 0
 resources:
-  homepage: http://github.com/dagolden/dist-zilla-plugin-appendexternaldata/tree
-  repository: git://github.com/dagolden/dist-zilla-plugin-appendexternaldata.git
-version: 0.002
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-AppendExternalData
+  homepage: https://github.com/dagolden/dist-zilla-plugin-appendexternaldata
+  repository: https://github.com/dagolden/dist-zilla-plugin-appendexternaldata.git
+version: 0.003
